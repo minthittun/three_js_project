@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Panel with Three.js</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div id="content" class="content"></div>
+        <div class="right-menu">
+            <br />
+            <h5>Overview</h5>
+            <table>
+                <tr>
+                    <td>
+                        <img src="assets/images/sample.png" style="width: 100px;" alt="" srcset="">
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="text_grey">Drone - 1</label>
+                                    <h4>60%</h4>
+                                </td>
+                                <td>
+                                    <label class="text_grey">Drone - 2</label>
+                                    <h4>20%</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="text_grey">Drone - 3</label>
+                                    <h4>30%</h4>
+                                </td>
+                                <td>
+                                    <label class="text_grey">Drone - 4</label>
+                                    <h4>60%</h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br /><br /><br />
+            <h5>Device List</h5>
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="assets/images/d.png" style="width: 30px;" alt="" srcset=""> <br />
+                            <label class="text_grey">Drone - 1</label>
+                            <h4>60%</h4>
+                            <label class="text_active">Active</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="assets/images/d.png" style="width: 30px;" alt="" srcset=""> <br />
+                            <label class="text_grey">Drone - 2</label>
+                            <h4>20%</h4>
+                            <label class="text_active">Active</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="assets/images/d.png" style="width: 30px;" alt="" srcset=""> <br />
+                            <label class="text_grey">Drone - 3</label>
+                            <h4>20%</h4>
+                            <label class="text_active">Active</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="assets/images/d.png" style="width: 30px;" alt="" srcset=""> <br />
+                            <label class="text_grey">Drone - 4</label>
+                            <h4>60%</h4>
+                            <label class="text_not_active">Active</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="assets/images/d.png" style="width: 30px;" alt="" srcset=""> <br />
+                            <label class="text_grey">Drone - 5</label>
+                            <h4>30%</h4>
+                            <label class="text_not_active">Active</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <br /><br /><br />
+            <h5>Usage Statistics</h5>
+            <canvas id="myChart" width="300" height="200"></canvas>
+
+        </div>
+
+        <div class="station_info">
+            <div style="padding: 30px;">
+                <h5>Station</h5>
+                <h2>B - 1F - 3R</h2>
+            </div>
+        </div>
+
+        <div class="station_console">
+            <div class="console_panel">
+                <pre class="console_text"></pre>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+
+    
+    <script src="js/app.js"></script>
+    <script src="js/app_chart.js"></script>
+</body>
+</html>
